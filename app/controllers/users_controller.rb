@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   
   before_action :authenticate_user!
+  # GET to /users
+  def index
+    @users = User.all
+  end
   
   # GET to /users/:id
   def show
