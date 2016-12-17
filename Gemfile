@@ -40,6 +40,8 @@ gem 'stripe', '1.48.0'
 gem 'figaro', '1.1.1'
 # Use Paperclip for image upload
 gem 'paperclip', '4.3.6'
+# Use AWS-SDK for storing images on Heroku
+gem 'aws-sdk', '~> 2.6', '>= 2.6.38'
 
 
 group :development, :test do
