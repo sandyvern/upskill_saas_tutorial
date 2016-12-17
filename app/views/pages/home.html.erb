@@ -13,11 +13,11 @@
         <div class="well">
           <h2 class='text-center'>Your Profile</h2>
           <% if current_user.profile %>
-            <%= link_to 'Edit Your Profile', edit_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-block btn-lg' %>
-            <%= link_to 'View Your Profile', user_path(id: current_user.id), class: 'btn btn-default btn-block btn-lg' %>
+            <%= link_to 'Edit Your Profile', edit_user_profile_path(user_id: current_user.id), class: 'btn btn-success btn-block btn-lg' %>
+            <%= link_to 'View Your Profile', user_path(id: current_user.id), class: 'btn btn-primary btn-block btn-lg' %>
           <% else %>
             <p>Create your profile so you can share your information with the community.</p><br>
-            <%= link_to "Create your profile!", new_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-block btn-lg' %>
+            <%= link_to "Create your profile!", new_user_profile_path(user_id: current_user.id), class: 'btn btn-primary btn-block btn-lg' %>
           <% end %>
         </div>
       </div>
@@ -26,7 +26,7 @@
         <div class="well">
           <h2 class='text-center'>The Community</h2>
             <p>Visit the community to meet other developers, entrepreneurs, investors and students who are learning web development!</p>
-            <%= link_to 'Visit the Community', users_path, class: 'btn btn-default btn-block btn-lg' %>
+            <%= link_to 'Visit the Community', users_path, class: 'btn btn-warning btn-block btn-lg' %>
         </div>
       </div>
       
