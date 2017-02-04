@@ -40,6 +40,7 @@ gem 'stripe', '1.48.0'
 gem 'figaro', '1.1.1'
 # Use Paperclip for image upload
 gem 'paperclip', '4.3.6'
+gem 'aws-sdk', '~> 2.7', '>= 2.7.3'
 
 
 group :development, :test do
